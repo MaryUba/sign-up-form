@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%) ;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.container{
+    height: 100vh;
+    margin: 0 auto;
+}
+
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-column{
+    /* max-width: 33.75rem; */
+    line-height: 1.5;
+    border: solid red;
+
+}
+
+/* .right-column {
+    
+} */
+
+#form{
+    background: white;
+    padding: 2rem;
+    margin-top: 3rem;
+    height: 60vh;
+}
+
+input {
+    min-width: 100%;
+    padding: 1rem;
+    border: 1px solid lightgray;
+    font-weight: 600;
+    border-radius: 0.3rem;
+    outline: none;
+    margin: 0.8rem;
+}
+
+button{
+    padding: 1rem 2rem;
+    min-width: 100%;
+    border-radius: .5em;
+    border: none;
+    background-color: #38CC8B;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+    font-weight: 500;
+}
+
+.error {
+    color: red;
+    display: none;
+}
+
+.thankyou {
+    display: none;
+}
