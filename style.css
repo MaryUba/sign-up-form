@@ -7,7 +7,6 @@
 body{
     background-image: url(./images/bg-intro-desktop.png);
     background-color: hsl(0, 100%, 74%) ;
-    /* background-size: cover; */
     padding: 1rem;
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
@@ -16,38 +15,34 @@ body{
 
 .container{
     height: 100vh;
-    margin: 0 auto;
     color: white;
-    justify-content: center;
-    align-items: center; 
 }
 
 
 .content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem;
     justify-content: center;
     align-items: center;
 }
 
 .left-column{
     min-width: 33.75rem;
-    line-height: 1.5;
-    border: solid red;
+    line-height: 1;
+    margin-left: 15rem;
 }
 
 .left-column h1{
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
+    font-size: 3rem;
 }
 
 .left-column p{
-    line-height: 2;
+    line-height: 1.5;
 
 }
 
 .right-column {
-    border: solid red;
     width: 70%;
     margin: 3rem;
 }
@@ -56,7 +51,6 @@ body{
     padding: 1.5rem 4rem;
     background-color: hsl(248, 32%, 49%);
     border-radius: 0.5rem;
-    box-shadow: ;
 }
 
 .try-price span{
@@ -69,7 +63,7 @@ form{
     padding: 2rem;
     border-radius: 0.5rem;
     margin-top: 2rem;
-    height: 70vh;
+    height: 65vh;
 }
 
 input {
@@ -117,4 +111,38 @@ form a{
 
 .thankyou {
     display: none;
+}
+
+@media screen and (max-width: 400px) {
+    body{
+        background-image: url(./images/bg-intro-mobile.png);
+        padding: 1rem;
+        /* display: flex; */
+        /* max-width: 20rem; */
+        /* margin: 2rem; */
+    }
+
+    .container{
+        display: flex;
+        max-width: 23.43rem;
+        padding: 1rem;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .right-column {
+        width: 50%;
+        margin: 3rem;
+    }
+
+    .left-column{
+        border: solid red;
+    }
+
+    .left-column p{
+        text-align: center;
+    }
 }
